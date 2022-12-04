@@ -1,0 +1,249 @@
+/* start part-1 */
+.part-1{
+    background-image: url('../special-images/abstract-blur-background-empty-airport-check-counters.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.part-1 .content .coll{
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.part-1 .item{
+    background-color: rgb(171, 229, 243);
+    width: 24%;
+    margin: 20px 10px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.part-1 .item.act{background-color: #4f97db; color: #fff;}
+.part-1 .item.act .head{background-color: #4f97db;}
+.part-1 .item .head{
+    padding: 4px;
+    position: absolute;
+    top: -12%;
+    left: 38.5%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(171, 229, 243);
+}
+.part-1 .item .head img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.part-1 .item .title{
+    padding: 40px 10px 10px 10px;
+}
+.part-1 .item .title h3{text-align: center;}
+/* end part-1 */
+/* start part-2 */
+.part-2 .cole{
+    display: flex;
+}
+.part-2 .cole .left{
+    width: 50%;
+    padding: 140px;
+}
+.part-2 .cole .ritgh{width: 50%;padding: 20px;}
+.part-2 .cole .ritgh .image{
+    width: 100%;
+    border-radius: 21pc 28pc 24pc 32pc;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #b5babe79;
+}
+.part-2 .cole .ritgh .image img{
+    width: 100%;
+}
+.part-2 .cole .left .bttn{
+    background-color: #4f97db;
+    color: black;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-top: 10px;
+}
+.part-2 .cole .left .bttn:hover{
+    transition: 0.3s;
+    background-color: #1784eb;
+    color: #fff;
+}
+.left .bttn:focus{outline: none;}
+.left h3{font-size: 28px;}
+/* end part-2 */
+/* start part-3 */
+.part-3{
+    background-color: #fff;
+    padding-bottom: 25px;
+}
+.tihead{
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.swiper{
+  width: 100%;
+  padding: 15px !important;
+}
+.res{display: none;}/* responsiw swiper */
+.swiper-button-next, .swiper-button-prev{display: none !important;}
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination{display: none;}
+.swiper-slide .item01{
+    background-color: #4f97db;
+    width: 24%;
+    padding: 5px;
+    margin: 0px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.part-3 .item01 .imag{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 4px;
+    margin: auto;
+    background-color: aliceblue;
+}
+.part-3 .item01 .imag img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.part-3 .item01 .titlee{
+    width: 100%;
+    padding: 4px;
+}
+.part-3 .item01 .titlee h3{color: #fff;}
+.part-3 .item01 .titlee p{text-align: left; font-size: 16px;color: #fff;}
+/* end part-3 */
+/* start part-4 */
+.part-4 .box{
+    width: 60%;
+    padding-bottom: 15px;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.part-4 .box .cmp{
+    width: 120px;
+    height: 120px;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.part-4 .box .cmp img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.part-4 .box .cmp:hover{
+    transition: 0.3s;
+    background-color: #b2bec362;
+    background-image: linear-gradient(62deg, #8ec5fc3b 0%, #e0c3fc44 100%);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.part-4 .box .cmp:hover img{opacity: 1;transition: 0.3s;}
+/* end part-4 */
+/* start part-5 */
+.part-5{
+    background-color: #fff;
+    padding-bottom: 15px;
+}
+.part-5 .title{
+    padding: 5px;
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #1784eb;
+}
+
+/* start Responsive */
+@media only screen and (max-width: 550px){
+    /* for swiper */
+    .part-3 .res{display: block;}
+    .part-3 .nrs{display: none;}
+    .swiper-slide .item01{width: 270px !important;}
+}
+@media only screen and (max-width: 750px){
+    /* start part-1 */
+    .part-1{padding-bottom: 0px;}
+    .part-1 .coll{
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .part-1 .title p{font-size: 13px;}
+    .part-1 .item .title h3{font-size: 15px;}
+    .part-1 .coll .item{width: 300px;margin-top: 30px;}
+    .part-1 .coll .item:nth-child(1){margin-top: 5px;}
+    .part-1 .item .head{left: 117px;}
+    /* end part-1 */
+    .part-2 .cole{
+        flex-direction: column;
+        align-items: center;
+    }
+    .part-2 .cole .left{
+        width: 100%;
+        padding: 3px 20px !important;
+    }
+    .part-2 .cole .left .bttn{
+        font-size: 10px;
+        margin: 5px 0;
+        padding: 5px;
+    }
+    .part-2 .cole .left p{font-size: 12px;}
+    .part-2 .cole .ritgh{width: 100%;}
+    .left h3{font-size: 22px;}
+    /* end part-2 */
+    /* start part-3 */
+    .swiper-slide .item01{padding: 0 5px;width: 30%;}
+    /* for swiper */
+    .part-3 .res{display: block;}
+    .part-3 .nrs{display: none;}
+    .swiper-slide .item01{width: 270px !important;}
+    /* end part-3 */
+    /* start part-4 */
+    .part-4 .box{width: 80%;}
+    /* end part-4 */
+    /* start part-5 */
+    .part-5 .title{width: 100%; line-height: 20px;}
+    .part-5 .title p{font-size: 13px;}
+    /* end part-5 */
+}
+@media only screen and (max-width: 920px){
+    /* start part-1 */
+    .part-1 .coll{
+        flex-wrap: wrap;
+    }
+    .part-1 .item{width: 280px;}
+    /* end part-1 */
+    /* start part-2 */
+    .part-2 .cole .left{padding: 90px 20px;}
+    /* end part-2 */
+    /* start part-3 */
+    .tihead{font-size: 22px;}
+    .swiper-slide .item01{padding: 0 5px;width: 30%;}
+    .part-3 .item01 .titlee p{font-size: 12px;}
+    .part-3 .item01 .titlee h3{font-size: 15px;}
+    .part-3 .item01 .imag{width: 70px;height: 70px; margin-top: 5px;}
+}
